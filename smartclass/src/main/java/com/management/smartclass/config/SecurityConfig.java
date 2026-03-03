@@ -32,10 +32,25 @@ public class SecurityConfig {
                 .formLogin(form -> form.disable())
                 .httpBasic(basic -> basic.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/auth/**").permitAll()
-                        .requestMatchers("/api/rag/**").authenticated()
-                        .anyRequest().authenticated())
+        .requestMatchers(org.springframework.http.HttpMethod.OPTIONS, "/**").permitAll()
+
+        // Allow auth endpoints
+        .requestMatchers("/auth/**").permitAll()
+
+        // Allow Swagger
+        .requestMatchers(
+                "/",
+                "/swagger-ui/**",
+                "/swagger-ui.html",
+                "/v3/api-docs/**"
+        ).permitAll()
+
+        // Secure RAG
+        .requestMatchers("/api/rag/**").authenticated()
+
+        // Everything else requires login
+        .anyRequest().authenticated()
+)
                 .addFilterBefore(jwtFilter,
                         UsernamePasswordAuthenticationFilter.class);
 
