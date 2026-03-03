@@ -1,11 +1,10 @@
 import axios from "axios";
-import { API_BASE_URL } from "./constants";
 
 const api = axios.create({
-    baseURL: API_BASE_URL,
-    headers: {
-        "Content-Type": "application/json",
-    },
+  baseURL: "https://smart-curriculum-activity-and-attendance-182d.onrender.com", // your Render backend
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 // Interceptor to add JWT token
