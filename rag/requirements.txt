@@ -1,0 +1,26 @@
+# Core dependencies
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+pydantic>=1.10.0
+python-dotenv>=1.0.0
+python-multipart>=0.0.6
+
+# LangChain ecosystem
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+langchain-text-splitters>=0.0.1
+langchain-groq>=0.0.1
+
+# PDF Processing
+pypdf>=3.0.0
+pymupdf>=1.23.0
+
+# Embeddings & Vector Store
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+faiss-cpu>=1.7.0
+
+# HTTP & Data
+requests>=2.31.0
+numpy>=2.0.0

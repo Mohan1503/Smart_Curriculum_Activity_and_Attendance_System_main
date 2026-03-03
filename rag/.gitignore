@@ -1,0 +1,94 @@
+# ========================
+# Python cache & bytecode
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ========================
+# Virtual environments
+# ========================
+venv/
+.venv/
+env/
+.env/
+ENV/
+.conda/
+conda-env/
+
+# ========================
+# Distribution / packaging
+# ========================
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# ========================
+# PyTorch / ML artifacts
+# ========================
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.onnx
+*.h5
+*.pkl
+*.joblib
+
+# ========================
+# Jupyter
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# Logs & temp files
+# ========================
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# ========================
+# OS-specific junk
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# IDE / Editor files
+# ========================
+.vscode/
+.idea/
+*.iml
+
+# ========================
+# Environment & secrets
+# ========================
+.env
+.env.*
+*.key
+*.pem
+*.crt
+
+# ========================
+# Coverage & testing
+# ========================
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# ========================
+# Node (if frontend exists)
+# ========================
+node_modules/
+
+# ========================
+# Docker
+# ========================
+*.pid
