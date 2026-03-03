@@ -13,7 +13,7 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // allow all endpoints
-                        .allowedOrigins("https://smart-curriculum-activity-and-atten-two.vercel.app") // your Vercel frontend
+                        .allowedOrigins("https://smart-curriculum-activity-and-atten-ruby.vercel.app/") // your Vercel frontend
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowCredentials(true);
             }
